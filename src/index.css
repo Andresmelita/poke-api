@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*----Variable CSS----*/
+:root {
+    --color-red: rgb(199, 28, 28);
+    --color-white: white;
+}
+
+
+/*---- RESET ---*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+button {
+    border: none;
+}

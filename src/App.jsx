@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Footer from './components/shared/Footer'
 import Home from './Pages/Home'
 import Pokedex from './Pages/Pokedex'
 import PokedexByID from './Pages/PokedexByID'
@@ -18,6 +19,7 @@ function App() {
           <Route path='/pokedex/:id' element ={<PokedexByID/>}/>
         </Route>
       </Routes>
+      <Footer/>
     </div>
   )
 }

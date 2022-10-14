@@ -1,0 +1,39 @@
+.footer_red {
+    background-color: var(--color-red);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_black {
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_circle {
+    width: 70px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: rgb(17, 17, 17);
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.footer_circle-int {
+    width: 50px;
+    aspect-ratio: 1;
+    position: absolute;
+    background-color: var(rgb(17, 17, 17));
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    border: 9px solid white;
+}
