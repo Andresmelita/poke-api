@@ -1,7 +1,7 @@
 
 .header_red {
     background-color: var(--color-red);
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 50px;
     left: 0;
@@ -10,7 +10,7 @@
 
 .footer_red {
     background-color: var(--color-red);
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100px;
     bottom: 0;

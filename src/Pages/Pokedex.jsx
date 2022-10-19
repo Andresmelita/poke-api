@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import CardPoke from '../components/pokedex/CardPoke'
 import InputSearch from '../components/pokedex/InputSearch'
+import Pagination from '../components/pokedex/Pagination'
 import SelectByType from '../components/pokedex/SelectByType'
 
 const Pokedex = () => {
@@ -21,7 +22,7 @@ const Pokedex = () => {
                 .catch(err => console.log(err))
         } else {
             //Si quiero todos los pokemons
-            const URL = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
+            const URL = 'https://pokeapi.co/api/v2/pokemon?limit=1500&offset=0'
             axios.get(URL)
                 .then(res => setPokemons(res.data.results))
                 .catch(err => console.log(err))
@@ -29,6 +30,13 @@ const Pokedex = () => {
     }, [typeSelected])
 
     const userName = useSelector(state => state.userName)
+
+    //Lógica de paginación
+
+    const [page, setPage] = useState(1)
+    const [pokePerPage, setPokePerPage] = useState(8)
+    const initialPoke = (page - 1)*pokePerPage
+    const finalPoke = page * pokePerPage
 
     return (
         <div>
@@ -38,14 +46,17 @@ const Pokedex = () => {
             </header>
             <aside>
                 <InputSearch/>
-                <SelectByType
-                    setTypeSelected={setTypeSelected}
+                <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
+                <Pagination
+                    page={page}
+                    pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+                    setPage={setPage}
                 />
             </aside>
             <main>
                 <div className='card-container'>
                     {
-                        pokemons?.map(pokemon => (
+                        pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
                             <CardPoke
                                 key={pokemon.url}
                                 url={pokemon.url}
@@ -54,6 +65,11 @@ const Pokedex = () => {
                     }
                 </div>
             </main>
+            <Pagination
+                page={page}
+                pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+                setPage={setPage}
+            />
         </div>
     )
 }

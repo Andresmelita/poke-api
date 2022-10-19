@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const SelectByType = ({setTypeSelected}) => {
+const SelectByType = ({setTypeSelected, setPage}) => {
 
     const [types, setTypes] = useState()
 
@@ -14,6 +14,7 @@ const SelectByType = ({setTypeSelected}) => {
 
     const handleChange = e => {
         setTypeSelected(e.target.value)
+        setPage(1)
     }
 
     return (

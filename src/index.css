@@ -16,8 +16,8 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: url('./images/home/deoxis.png') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('./images/home/deoxis.png') no-repeat center center fixed;
+    background-size: cover; */
 }
 
 body::before {
