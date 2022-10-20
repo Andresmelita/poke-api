@@ -5,6 +5,8 @@ import CardPoke from '../components/pokedex/CardPoke'
 import InputSearch from '../components/pokedex/InputSearch'
 import Pagination from '../components/pokedex/Pagination'
 import SelectByType from '../components/pokedex/SelectByType'
+import Header from '../components/shared/Header'
+import Footer from '../components/shared/Footer'
 import pokedex from './styles/pokedex.css'
 
 const Pokedex = () => {
@@ -41,8 +43,9 @@ const Pokedex = () => {
 
     return (
         <div>
+            <Header/>
             <header>
-                <h1>Pokedex</h1>
+                <img className='pokedex-logo' alt='' src='./images/home/pokedex.png'/>
                 <p>Welcome <span>{userName}</span>, here you can find your favorite pokemon.</p>
             </header>
             <aside>
@@ -71,6 +74,7 @@ const Pokedex = () => {
                 pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
                 setPage={setPage}
             />
+            <Footer/>
         </div>
     )
 }

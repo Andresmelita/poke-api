@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
       <Routes>
         <Route path='/' element ={<Home/>}/>
         <Route path='/' element ={<ProtectedRoutes/>}>
@@ -21,7 +20,6 @@ function App() {
           <Route path='/pokedex/:id' element ={<PokedexByID/>}/>
         </Route>
       </Routes>
-      <Footer/>
     </div>
   )
 }

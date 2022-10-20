@@ -5,6 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='header_red'></div>
+            <div className='header_black'></div>
         </div>
     )
 }
