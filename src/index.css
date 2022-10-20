@@ -20,12 +20,12 @@ body {
     background-size: cover; */
 }
 
-body::before {
+/* body::before {
     content: "";
     background-color: rgba(207, 207, 207, 0.377);
     inset: 0;
     position: absolute;
-}
+} */
 
 
 h1, h2, h3, h4, ul, p {

@@ -1,12 +1,11 @@
 .card-poke {
     width:100%;
     max-width: 400px;
-    border-radius: 13px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 10px;
     border-width: 10px;
     border-style: solid;
-    border-color: aqua;
 }
 
 .card-poke_header {
@@ -84,3 +83,90 @@
 .card-poke_stat-number {
     font-size: 18px;
 }
+
+/* Borders Colors*/
+
+.border-normal {
+    border-color: #9b9b9b;
+}
+.border-fighting {
+    border-color: #8ab896;
+}
+.border-flying {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+.border-grass {
+    border-color: #8ab896;
+}
+
+/* Background Colora */
+
+.bg-normal {
+    background: linear-gradient(178.92deg, #5e5e5e 0.92%, #b3b3b3 47.96%, #ebebeb 99.08%);
+}
+
+.bg-grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+/* Letter Color */
+
+.letter-normal {
+    color: #777777;
+}
+
+.letter-grass {
+    color: #416460;
+}
+

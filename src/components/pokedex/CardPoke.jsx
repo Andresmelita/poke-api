@@ -20,12 +20,12 @@ const CardPoke = ({url}) => {
     }
 
     return (
-        <article className='card-poke' onClick={handleClick}>
-            <header className='card-poke_header'>
+        <article className={`card-poke border-${pokemon?.types[0].type.name}`} onClick={handleClick}>
+            <header className={`card-poke_header bg-${pokemon?.types[0].type.name}`}>
                 <img className='card-poke_sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
             </header>
             <section className='card-poke_body'>
-                <h3 className='card-poke_name'>{pokemon?.name}</h3>
+                <h3 className={`card-poke_name letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
                 <ul className='card-poke_types-container'>
                     {
                         pokemon?.types.map(type => (
@@ -39,7 +39,7 @@ const CardPoke = ({url}) => {
                         pokemon?.stats.map(stat =>(
                             <li key={stat.stat.name} className='card-poke_stat'>
                                 <span className='card-poke_stat-label'>{stat.stat.name}</span>
-                                <span className='card-poke_stat-number'>{stat.base_stat}</span>
+                                <span className={`card-poke_stat-number letter-${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
                             </li>
                         ))
                     }

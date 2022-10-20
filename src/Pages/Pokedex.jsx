@@ -5,6 +5,7 @@ import CardPoke from '../components/pokedex/CardPoke'
 import InputSearch from '../components/pokedex/InputSearch'
 import Pagination from '../components/pokedex/Pagination'
 import SelectByType from '../components/pokedex/SelectByType'
+import pokedex from './styles/pokedex.css'
 
 const Pokedex = () => {
     
@@ -34,7 +35,7 @@ const Pokedex = () => {
     //Lógica de paginación
 
     const [page, setPage] = useState(1)
-    const [pokePerPage, setPokePerPage] = useState(8)
+    const [pokePerPage, setPokePerPage] = useState(10)
     const initialPoke = (page - 1)*pokePerPage
     const finalPoke = page * pokePerPage
 
