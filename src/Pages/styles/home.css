@@ -19,7 +19,7 @@ body::before {
     gap: 30px;
     padding: 20px;
     padding-bottom: 100px;
-    background: url('./images/home/deoxis.png') no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -39,10 +39,17 @@ body::before {
 
 .pokedex_subtitle {
     text-align: center;
-    color: black;
+    color: rgb(155, 14, 14);
+    text-shadow: 0.1rem 0.1rem rgb(209, 209, 209);
     font-size: 2rem;
     margin-bottom: 2px;
     z-index: 2;
+    position: relative;
+}
+
+.pokedex_text {
+    text-shadow: 0.1rem 0.1rem rgb(32, 32, 32);
+    color: aliceblue;
 }
 
 .pokedex_form {
