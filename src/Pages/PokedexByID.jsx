@@ -34,17 +34,32 @@ const PokedeXByID = () => {
                     <img className='card-poke_spriteID' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
                     <header className={`card-poke_headerID bg-${pokemon?.types[0].type.name}`}></header>
 
-
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
                         <ul className='card-poke_types-container'>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className={`card-poke_type back-${pokemon?.types[0].type.name}`}>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type back-${pokemon?.types[0].type.name} back-${pokemon?.types[1].type.name}`}>{type.type.name}</li>
                                 ))
                             }
                         </ul>
-                        <p className='card-poke_type-label'>Type</p>
+                    </section>
+
+                    <section className='card-poke_bodyID'>
+                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
+                        <ul className='card-poke_abilities-container'>
+                            {
+                                pokemon?.abilities.map(ability =>(
+                                    <li key={ability.ability.name} className='card-poke_abilities'>
+                                        <span className='card-poke_abilities-label'>{ability.ability.name}</span>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </section>
+                    {/* APARTADO DE STATS */}
+                    <section className='card-poke_bodyID'>
+                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Stats</h3>
                         <ul className='card-poke_stat-container'>
                             {
                                 pokemon?.stats.map(stat =>(
@@ -56,16 +71,14 @@ const PokedeXByID = () => {
                             }
                         </ul>
                     </section>
-                    {/* APARTADO DE STATS */}
+                    {/* APARTADO DE MOVIMIENTOS */}
                     <section className='card-poke_bodyID'>
-                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Stats</h3>
-                        <p className='card-poke_type-label'>Type</p>
-                        <ul className='card-poke_stat-container'>
+                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Movements</h3>
+                        <ul className='card-poke_moves-container'>
                             {
-                                pokemon?.stats.map(stat =>(
-                                    <li key={stat.stat.name} className='card-poke_stat'>
-                                        <span className='card-poke_stat-label'>{stat.stat.name}</span>
-                                        <span className={`card-poke_stat-number letter-${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
+                                pokemon?.moves.map(move =>(
+                                    <li key={move.move.name} className='card-poke_moves'>
+                                        <span className='card-poke_moves-label'>{move.move.name}</span>
                                     </li>
                                 ))
                             }

@@ -1,6 +1,5 @@
 .containerID {
     width: 100vw;
-    height: 100vh;
     position: relative;
 }
 
@@ -23,7 +22,7 @@
     border-style: solid;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(25%);
+    transform: translateY(15%);
     position: relative;
     background-color: #003f5c;
 }
@@ -72,7 +71,7 @@
 }
 
 .card-poke_type:nth-child(2)::before {
-    content: '/';
+    content: '';
     position: absolute;
     left: -10px;
 }
@@ -90,6 +89,44 @@
     gap: 20px 5px;
     justify-items: center;
     padding: 0 5px 35px;
+}
+
+.card-poke_moves-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px 5px;
+    justify-items: center;
+    margin-top: 30px;
+    padding: 0 5px 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-poke_moves {
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-radius: 18px;
+    color: rgb(29, 29, 29);
+}
+
+.card-poke_abilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 5px;
+    justify-items: center;
+    margin-top: 30px;
+    padding: 0 5px 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-poke_abilities {
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-radius: 18px;
+    color: rgb(29, 29, 29);
 }
 
 .card-poke_stat {
