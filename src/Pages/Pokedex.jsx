@@ -46,16 +46,16 @@ const Pokedex = () => {
             <Header/>
             <header>
                 <img className='pokedex-logo' alt='' src='./images/home/pokedex.png'/>
-                <p>Welcome <span>{userName}</span>, here you can find your favorite pokemon.</p>
+                <p className='pokedex-welcome'>Welcome <span><b>{userName}</b></span>, here you can find your favorite pokemon!</p>
             </header>
-            <aside>
+            <aside className='pokedex-aside'>
                 <InputSearch/>
-                <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
                 <Pagination
                     page={page}
                     pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
                     setPage={setPage}
                 />
+                <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
             </aside>
             <main>
                 <div className='card-container'>

@@ -11,8 +11,26 @@
     width: 390px;
     position: absolute;
     padding: 0;
-    margin: 0;
+    margin: 10px;
     z-index: 5;
     top: 10px;
     left: 10px;
+}
+
+.pokedex-welcome {
+    margin:auto;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pokedex-aside {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 30px;
+    position: relative;
 }

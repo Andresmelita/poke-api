@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import './styles/inputs.css'
 
 const SelectByType = ({setTypeSelected, setPage}) => {
 
@@ -18,7 +19,7 @@ const SelectByType = ({setTypeSelected, setPage}) => {
     }
 
     return (
-        <select onChange={handleChange}>
+        <select onChange={handleChange} className='selectType'>
             <option value="All Pokemons">All Pokemons</option>
             {
                 types?.map(type => (
