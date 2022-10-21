@@ -1,7 +1,10 @@
 .containerID {
-    width: 100%;
-    height: 100%;
-    background-size:auto;
+    width: 100vw;
+    height: 100%vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
 }
 
 .pokeball-img {
@@ -22,8 +25,10 @@
     border-width: 15px;
     border-style: solid;
     margin-left: auto;
+    margin-top: 170px;
+    margin-bottom: 100px;
     margin-right: auto;
-    transform: translateY(15%);
+    transform: translateY(0%);
     position: relative;
     background-color: #fffef0;
 }
