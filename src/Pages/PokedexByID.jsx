@@ -40,7 +40,7 @@ const PokedeXByID = () => {
                         <ul className='card-poke_types-container'>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className='card-poke_type'>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type back-${pokemon?.types[0].type.name}`}>{type.type.name}</li>
                                 ))
                             }
                         </ul>
@@ -56,15 +56,9 @@ const PokedeXByID = () => {
                             }
                         </ul>
                     </section>
+                    {/* APARTADO DE STATS */}
                     <section className='card-poke_bodyID'>
-                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
-                        <ul className='card-poke_types-container'>
-                            {
-                                pokemon?.types.map(type => (
-                                    <li key={type.slot} className='card-poke_type'>{type.type.name}</li>
-                                ))
-                            }
-                        </ul>
+                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Stats</h3>
                         <p className='card-poke_type-label'>Type</p>
                         <ul className='card-poke_stat-container'>
                             {

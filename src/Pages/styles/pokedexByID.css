@@ -10,9 +10,9 @@
     position: fixed;
     display: flex;
     filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
-    top: -59%;
-    left: 50%;
-    transform: scale(0.2) translate(-50%, -50%);
+    top: -66%;
+    left: 48%;
+    transform: scale(0.15) translate(-50%, -50%);
 }
 
 .card-pokeID {
@@ -283,57 +283,57 @@
 /* Background Color*/
 
 .back-normal {
-    color: #777777;
+    background: linear-gradient(178.92deg, #5a5a5a 0.92%, #a1a1a1 47.96%, #edecff 99.08%);
 }
 .back-fighting {
-    color: #941100;
+    background: linear-gradient(178.92deg, #7e0e0e 0.92%, #cc2e2e 47.96%, #ffa1a1 99.08%);
 }
 .back-flying {
-    color: #00757e;
+    background: linear-gradient(178.92deg, #47c5aa 0.92%, #76cece 47.96%, #a4f7c0 99.08%);
 }
 .back-poison {
-    color: #743b74;
+    background: linear-gradient(178.92deg, #7e26b1 0.92%, #b41ce2 47.96%, #f0beff 99.08%);
 }
 .back-ground {
-    color: #be9549;
+    background: linear-gradient(178.92deg, #a8713d 0.92%, #dfb260 47.96%, #fff6a6 99.08%);
 }
 .back-rock {
-    color: #693300;
+    background: linear-gradient(178.92deg, #491b00 0.92%, #724b18 47.96%, #d19862 99.08%);
 }
 .back-bug {
-    color: #3e8001;
+    background: linear-gradient(178.92deg, #99bb01 0.92%, #c1ce50 47.96%, #f6ffc5 99.08%);
 }
 .back-ghost {
-    color: #311480;
+    background: linear-gradient(178.92deg, #3a007c 0.92%, #661eb8 47.96%, #b65cd1 99.08%);
 }
 .back-steel {
-    color: #003f5c;
+    background: linear-gradient(178.92deg, #003f5c 0.92%, #25495a 47.96%, #5c6c74 99.08%);
 }
 .back-fire {
     background: linear-gradient(178.92deg, #ff9563 0.92%, #ffa149 47.96%, #ffe449 99.08%);
 }
 .back-water {
-    color: #24acce;
+    background: linear-gradient(178.92deg, #1bb7ff 0.92%, #3ad1ff 47.96%, #adf5ff 99.08%);
 }
 .back-grass {
-    color: #73997d;
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
 }
 .back-electric {
-    color: #daa000;
+    background: linear-gradient(178.92deg, #ffc420 0.92%, #ffec46 47.96%, #faffb1 99.08%);
 }
 .back-psychic {
-    color: #d83838;
+    background: linear-gradient(178.92deg, #b91f52 0.92%, #bd3965 47.96%, #ff81bc 99.08%);
 }
 .back-ice {
-    color: #01a0a5;
+    background: linear-gradient(178.92deg, #16d8d8 0.92%, #8eebeb 47.96%, #d3ffd1 99.08%);
 }
 .back-dragon {
-    color: #001380;
+    background: linear-gradient(178.92deg, #061452 0.92%, #243894 47.96%, #4385c4 99.08%);
 }
 .back-dark {
-    color: #414141;
+    background: linear-gradient(178.92deg, #292929 0.92%, #575757 47.96%, #8491ad 99.08%);
 }
 .back-fairy {
-    color: #b977be;
+    background: linear-gradient(178.92deg, #ff9afa 0.92%, #ffc1f5 47.96%, #edcdfc 99.08%);
 }
 
