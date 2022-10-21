@@ -29,28 +29,25 @@ const PokedeXByID = () => {
         <article >
             <section className={`containerID back-${pokemon?.types[0].type.name}`}>
                 <img className='pokeball-img' src='./images/pokeball3.png' alt=''/>
-
                 <article className={`card-pokeID border-${pokemon?.types[0].type.name}`}>
                     <img className='card-poke_spriteID' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
                     <header className={`card-poke_headerID bg-${pokemon?.types[0].type.name}`}></header>
-
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
                         <ul className='card-poke_types-container'>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className={`card-poke_type back-${pokemon?.types[0].type.name} back-${pokemon?.types[1].type.name}`}>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type`}>{type.type.name}</li>
                                 ))
                             }
                         </ul>
                     </section>
-
                     <section className='card-poke_bodyID'>
-                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
+                        <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Abilities</h3>
                         <ul className='card-poke_abilities-container'>
                             {
                                 pokemon?.abilities.map(ability =>(
-                                    <li key={ability.ability.name} className='card-poke_abilities'>
+                                    <li key={ability.ability.name} className={`card-poke_abilities back-${pokemon?.types[0].type.name}`}>
                                         <span className='card-poke_abilities-label'>{ability.ability.name}</span>
                                     </li>
                                 ))
@@ -60,7 +57,7 @@ const PokedeXByID = () => {
                     {/* APARTADO DE STATS */}
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Stats</h3>
-                        <ul className='card-poke_stat-container'>
+                        <ul className='card-poke_stat-containerID'>
                             {
                                 pokemon?.stats.map(stat =>(
                                     <li key={stat.stat.name} className='card-poke_stat'>
@@ -85,8 +82,6 @@ const PokedeXByID = () => {
                         </ul>
                     </section>
                 </article>
-
-
             </section>
         </article>
     )

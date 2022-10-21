@@ -20,6 +20,7 @@
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
 }
 
 .card-poke_body {

@@ -26,13 +26,28 @@ const Pagination = ({page, pagesLength, setPage}) => {
         setPage(currentPage)
     }
 
+    const handlePrevSection = () => {
+        if (page <= 8){
+            setPage(page(1))
+        } else {
+            setPage(page-8)
+        }
+    }
+
+    const handleNextSection = () => {
+        setPage(page+8)
+    }
+
     return (
         <div className='pagination'>
             {
-                page > 1 && 
-                <div onClick={handlePrev} className='pagination_prev pagination_active'>&#60;</div>
+                page > 8 && 
+                <div onClick={handlePrevSection} className='pagination_prev pagination_active'>◀</div>
             }
-            <div>...</div>
+                        {
+                page > 1 && 
+                <div onClick={handlePrev} className='pagination_prev pagination_active'>◁</div>
+            }
             <ul className='pagination_container'>
                 {
                     arrPages.map(e => (
@@ -45,10 +60,13 @@ const Pagination = ({page, pagesLength, setPage}) => {
                     ))
                 }
             </ul>
-            <div>...</div>
             {
                 page < pagesLength &&
-                <div onClick={handleNext} className='pagination_next pagination_active'>&#62;</div>
+                <div onClick={handleNext} className='pagination_next pagination_active'>▷</div>
+            }
+            {
+                page < pagesLength &&
+                <div onClick={handleNextSection} className='pagination_next pagination_active'>▶</div>
             }
 
         </div>

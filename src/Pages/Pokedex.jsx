@@ -37,7 +37,7 @@ const Pokedex = () => {
     //Lógica de paginación
 
     const [page, setPage] = useState(1)
-    const [pokePerPage, setPokePerPage] = useState(10)
+    const [pokePerPage, setPokePerPage] = useState(8)
     const initialPoke = (page - 1)*pokePerPage
     const finalPoke = page * pokePerPage
 
