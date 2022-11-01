@@ -16,8 +16,8 @@ const FormHome = () => {
 
     return (
         <form onSubmit={submit} className='pokedex_form'>
-            <input className='pokedex_input' type='text' placeholder='Enter your name here'/>
-            <button className='pokedex_btn'>Catch them all!</button>
+            <input className='pokedex_input' type='text' placeholder='Enter your name here...'/>
+            <button className='pokedex_btn'>Catch them all !</button>
         </form>
     )
 }
