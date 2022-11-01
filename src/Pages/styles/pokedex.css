@@ -26,11 +26,33 @@
 
 .pokedex-aside {
     display: flex;
-    flex-direction: row;
-    /* background-color: aqua; */
     align-items: center;
-    flex-wrap: nowrap;
     justify-content: center;
     margin: 30px;
     position: relative;
 }
+
+@media screen and (min-width: 960px) {
+    .pokedex-aside {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .pokedex-aside {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pokedex-aside {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+}
+
