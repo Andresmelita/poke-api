@@ -30,3 +30,40 @@
     color: aliceblue;
     border-radius: 5px;
 }
+
+@media screen and (min-width: 960px) {
+    .pagination_prev,
+    .pagination_next,
+    .pagination_page {
+        aspect-ratio: 1;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    .pagination {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .pagination_prev,
+    .pagination_next,
+    .pagination_page {
+        width: 35px;
+    }
+    .pagination {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pagination_prev,
+    .pagination_next,
+    .pagination_page {
+        width: 28px;
+    }
+    .pagination {
+        font-size: 12px;
+    }
+}

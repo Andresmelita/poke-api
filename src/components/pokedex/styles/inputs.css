@@ -17,13 +17,10 @@
 .selectType {
     background-color: var(--color-red);
     position: relative;
-    margin-right: 120px;
-    margin-left: 100px;
     border-radius: 5px;
     border: solid rgb(196, 1, 1);
     width: 160px;
     height: 28px;
-    font-size: 18px;
     color: aliceblue;
     cursor: pointer;
 }
@@ -35,4 +32,29 @@
     font-size: 18px;
     border-radius: 1px;
     height: 28px;
+}
+
+@media screen and (min-width: 960px) {
+    .selectType {
+        margin-right: 120px;
+        margin-left: 100px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .selectType {
+        margin-right: 100px;
+        margin-left: 100px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .selectType {
+        margin-right: 100px;
+        margin-left: 100px;
+        font-size: 14px;
+        text-align: center;
+    }
 }
