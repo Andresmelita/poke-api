@@ -1,10 +1,7 @@
 .pagination {
-    margin-left: auto;
-    margin-right: auto;
     width: max-content;
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -42,6 +39,9 @@
     }
     .pagination {
         font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 10px;
     }
     .pagination_container{
         font-size: 15px;
@@ -72,6 +72,7 @@
     }
     .pagination {
         font-size: 12px;
+        gap: 2px;
     }
     .pagination_container{
         font-size: 12px;

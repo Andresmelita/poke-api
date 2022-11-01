@@ -69,4 +69,11 @@
         font-size: 14px;
         text-align: center;
     }
+    .search-input {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .button-input {
+        height: 34px;
+    }
 }
