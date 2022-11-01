@@ -5,13 +5,11 @@
     position: relative;
     height: 34px;
     cursor: auto;
-    font-size: 18px;
     border-radius: 5px;
 }
 
 .search-input {
     height: 28px;
-    font-size: 18px;
 }
 
 .selectType {
@@ -29,7 +27,6 @@
     cursor: pointer;
     background-color: var(--color-red);
     color: aliceblue;
-    font-size: 18px;
     border-radius: 1px;
     height: 28px;
 }
@@ -40,13 +37,19 @@
         margin-left: 100px;
         font-size: 18px;
     }
+    .search {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 959px) {
     .selectType {
         margin-right: 100px;
         margin-left: 100px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .search {
+        font-size: 16px;
     }
 }
 
@@ -54,6 +57,10 @@
     .selectType {
         margin-right: 100px;
         margin-left: 100px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .search {
         font-size: 14px;
         text-align: center;
     }
