@@ -27,6 +27,12 @@
     border-radius: 5px;
 }
 
+.paginationTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (min-width: 960px) {
     .pagination_prev,
     .pagination_next,
