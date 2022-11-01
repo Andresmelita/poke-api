@@ -28,6 +28,7 @@
     background-color: var(--color-red);
     color: aliceblue;
     border-radius: 1px;
+    border: solid rgb(196, 1, 1);
     height: 28px;
 }
 
