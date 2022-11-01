@@ -11,7 +11,6 @@
 
 .pagination_container {
     display: flex;
-    gap: 5px;
 }
 
 .pagination_prev,
@@ -44,6 +43,10 @@
     .pagination {
         font-size: 15px;
     }
+    .pagination_container{
+        font-size: 15px;
+        gap: 5px;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 959px) {
@@ -55,6 +58,10 @@
     .pagination {
         font-size: 14px;
     }
+    .pagination_container{
+        font-size: 14px;
+        gap: 4px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -65,5 +72,9 @@
     }
     .pagination {
         font-size: 12px;
+    }
+    .pagination_container{
+        font-size: 12px;
+        gap: 2px;
     }
 }

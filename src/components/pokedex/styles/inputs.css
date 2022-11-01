@@ -33,12 +33,19 @@
 
 @media screen and (min-width: 960px) {
     .selectType {
-        margin-right: 120px;
+        margin-right: 110px;
         margin-left: 100px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .search {
         font-size: 18px;
+        margin-left: 110px;
+    }
+    .search-input {
+        font-size: 16px;
+    }
+    .button-input {
+        font-size: 16px;
     }
 }
 
@@ -55,8 +62,6 @@
 
 @media screen and (max-width: 640px) {
     .selectType {
-        margin-right: 100px;
-        margin-left: 100px;
         font-size: 14px;
         text-align: center;
     }
