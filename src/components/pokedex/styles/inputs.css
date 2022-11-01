@@ -27,7 +27,7 @@
     cursor: pointer;
     background-color: var(--color-red);
     color: aliceblue;
-    border-radius: 1px;
+    border-radius: 5px;
     border: solid rgb(196, 1, 1);
     height: 28px;
 }
@@ -72,7 +72,6 @@
     }
     .search-input {
         font-size: 14px;
-        margin-left: 10px;
     }
     .button-input {
         height: 34px;
