@@ -19,15 +19,15 @@
 }
 
 .card-pokeID {
-    width:100%;
+    width:90%;
     max-width: 800px;
     border-radius: 10px;
     border-width: 15px;
     border-style: solid;
-    margin-left: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 170px;
     margin-bottom: 100px;
-    margin-right: auto;
     transform: translateY(0%);
     position: relative;
     background-color: #fffef0;
