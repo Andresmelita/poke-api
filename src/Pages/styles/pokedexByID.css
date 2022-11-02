@@ -5,17 +5,34 @@
     padding: 0;
     box-sizing: border-box;
     position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .pokeball-img {
-    z-index: 0;
-    position: absolute;
     position: fixed;
-    display: flex;
-    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
-    top: -66%;
-    left: 48%;
-    transform: scale(0.15) translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
+    aspect-ratio: 1;
+    animation-name: girarb;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+@keyframes girarb {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.pokeball-img:hover {
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    transition: filter 200ms ease;
 }
 
 .card-pokeID {
@@ -46,10 +63,62 @@
     margin: auto;
     z-index: 1;
     position: absolute;
-    top: 0%;
-    left: 50%;
     filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
-    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 960px) {
+    .card-poke_spriteID{
+        animation: movimiento 5s linear infinite;
+    }
+
+    .pokeball-img {
+        top: 4%;
+        left: 15%;
+        width: 120px;
+        z-index: 2;
+    }
+
+    @keyframes movimiento {
+        0% {
+            transform: translateY(-44%) translateX(60%);
+        }
+        50% {
+            transform: translateY(-50%) translateX(60%);
+        }
+        100% {
+            transform: translateY(-44%) translateX(60%);
+        }
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .card-poke_spriteID {
+        transform: translate(-50%, -50%);
+        top: 0%;
+        left: 50%;
+    }
+
+    .pokeball-img {
+        top: 4%;
+        left: 10%;
+        width: 100px;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card-poke_spriteID {
+        transform: translate(-50%, -50%);
+        top: 0%;
+        left: 50%;
+    }
+
+    .pokeball-img {
+        top: 4%;
+        left: 8%;
+        width: 80px;
+        z-index: 2;
+    }
 }
 
 .card-poke_bodyID {
