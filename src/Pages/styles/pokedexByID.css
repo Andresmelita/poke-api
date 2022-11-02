@@ -39,7 +39,6 @@
     width:90%;
     max-width: 800px;
     border-radius: 10px;
-    border-width: 15px;
     border-style: solid;
     margin-left: 20px;
     margin-right: 20px;
@@ -68,10 +67,11 @@
 @media screen and (min-width: 960px) {
     .card-poke_spriteID{
         animation: movimiento 5s linear infinite;
+        max-width: 350px;
     }
 
-    .card-poke_spriteID {
-        max-width: 350px;
+    .card-pokeID{
+        border-width: 15px;
     }
 
     .pokeball-img {
@@ -97,12 +97,13 @@
 @media (min-width: 641px) and (max-width: 959px) {
     .card-poke_spriteID {
         transform: translate(-50%, -50%);
+        max-width: 300px;
         top: 0%;
         left: 50%;
     }
 
-    .card-poke_spriteID {
-        max-width: 300px;
+    .card-pokeID{
+        border-width: 10px;
     }
 
     .pokeball-img {
@@ -116,12 +117,13 @@
 @media screen and (max-width: 640px) {
     .card-poke_spriteID {
         transform: translate(-50%, -50%);
+        max-width: 250px;
         top: 28px;
         left: 50%;
     }
 
-    .card-poke_spriteID {
-        max-width: 250px;
+    .card-pokeID{
+        border-width: 8px;
     }
 
     .pokeball-img {

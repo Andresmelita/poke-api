@@ -25,10 +25,14 @@ const PokedeXByID = () => {
         return <Pokemon404/>
     }
 
+    const handleClick = () => {
+        navigate('/pokedex')
+    }
+
     return (
         <article >
             <section className={`containerID back-${pokemon?.types[0].type.name}`}>
-                <img className='pokeball-img' src='./images/pokeball3.png' alt=''/>
+                <img className='pokeball-img' src='./images/pokeball3.png' alt='' onClick={handleClick}/>
                 <article className={`card-pokeID border-${pokemon?.types[0].type.name}`}>
                     <img className='card-poke_spriteID' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
                     <header className={`card-poke_headerID bg-${pokemon?.types[0].type.name}`}></header>

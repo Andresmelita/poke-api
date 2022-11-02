@@ -23,6 +23,21 @@
     }
 }
 
+@media screen and (min-width: 960px) {
+    .pokedex_img {
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .pokedex_img {
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pokedex_img {
+    }
+}
+
 .pokedex::before {
     content: "";
     background-color: rgba(207, 207, 207, 0.26);
@@ -31,7 +46,7 @@
     position: absolute;
 }
 
-.pokedex_img {
+.pokedex_image {
     margin-bottom: 10px;
     max-width: 500px;
     z-index: 1;

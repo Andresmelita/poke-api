@@ -51,7 +51,6 @@
     }
     .pagination_container{
         font-size: 15px;
-        gap: 5px;
     }
 }
 
@@ -63,10 +62,10 @@
     }
     .pagination {
         font-size: 14px;
+        gap: 4px;
     }
     .pagination_container{
         font-size: 14px;
-        gap: 4px;
     }
 }
 

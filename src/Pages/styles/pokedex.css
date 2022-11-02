@@ -44,9 +44,9 @@
 
 @media (min-width: 641px) and (max-width: 959px) {
     .pokedex-aside {
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
-        margin: 30px;
+        position: relative;
     }
 }
 
