@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .card-poke {
     width:100%;
     max-width: 385px;
@@ -6,6 +8,7 @@
     margin: 10px;
     border-width: 10px;
     border-style: solid;
+    font-family: 'Inter', sans-serif;
     transition: linear 1s transform;
 }
 
@@ -38,7 +41,7 @@
 .card-poke_name {
     text-transform: capitalize;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -46,18 +49,15 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    font-size: 14px;
 }
 
 .card-poke_type {
-    font-size: 14px;
     text-transform: capitalize;
     position: relative;
 }
 
 .card-poke_type-label {
     text-align: center;
-    font-size: 14px;
     color: #999;
     padding-bottom: 30px;
 }
@@ -80,7 +80,6 @@
 .card-poke_stat-label {
     color: #999;
     text-transform: uppercase;
-    font-size: 12px;
 }
 
 .card-poke_stat-number {

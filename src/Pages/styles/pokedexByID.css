@@ -144,7 +144,7 @@
 .card-poke_nameID {
     text-transform: capitalize;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
@@ -158,34 +158,27 @@
     font-size: 17px;
     text-transform: capitalize;
     position: relative;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(58, 58, 58);
     font-size: 18px;
     font-weight: 500;
-}
-
-.card-poke_type:nth-child(2)::before {
-    content: '';
-    position: absolute;
-    left: -10px;
+    height: 40px;
 }
 
 .card-poke_type-label {
-    text-align: center;
     font-size: 14px;
     color: #999;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
 }
 
-.card-poke_stat-containerID {
-    gap: 20px 5px;
-    justify-items: center;
-    margin-top: 15px;
-    padding: 0 5px 35px;
+.card-poke_type-text{
+    text-align: center;
 }
+
 
 .card-poke_moves-container {
     display: flex;
@@ -227,21 +220,57 @@
     font-weight: 500;
 }
 
+
+.card-poke_stat-containerID {
+    gap: 20px 5px;
+    margin-top: 10px;
+    padding: 0 5px 20px;
+}
+
 .card-poke_stat {
     display: flex;
     gap: 5px;
-    flex-direction: column;
-    align-items: center;
 }
 
-.card-poke_stat-label {
+.status-text {
     color: #999;
     text-transform: uppercase;
     font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    gap: 20px;
+    font-weight: 500;
 }
 
-.card-poke_stat-number {
-    font-size: 18px;
+.card-poke_stat-label {
+    left: 0px;
+}
+
+.status-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #d4d4d4;
+    border-radius: 0.4rem;
+    font-size: 10px;
+    position: relative;
+
+}
+
+.status-text-number {
+    position: absolute;
+    z-index: 6;
+    right: 6px;
+    font-weight: 600;
+    margin-top: 3px;
+    text-align: center;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.status-bar2 {
+    height: 20px;
+    z-index: 5;
+    position: relative;
+    border-radius: 0.4rem;
 }
 
 /* Borders Colors*/

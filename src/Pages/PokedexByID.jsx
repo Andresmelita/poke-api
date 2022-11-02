@@ -40,10 +40,13 @@ const PokedeXByID = () => {
                     <header className={`card-poke_headerID bg-${pokemon?.types[0].type.name}`}></header>
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
+
                         <ul className={`card-poke_types-container`}>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className={`card-poke_type bg-${type.type.name}`}>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type bg-${type.type.name}`}>
+                                        <span className='card-poke_type-text'>{type.type.name}</span>
+                                    </li>
                                 ))
                             }
                         </ul>
@@ -60,6 +63,7 @@ const PokedeXByID = () => {
                             }
                         </ul>
                     </section>
+
                     {/* APARTADO DE STATS */}
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Stats</h3>
@@ -67,14 +71,22 @@ const PokedeXByID = () => {
                             {
                                 pokemon?.stats.map(stat =>(
                                     <li key={stat.stat.name} className='card-poke_stat'>
-                                        <span className='card-poke_stat-label'>{stat.stat.name}</span>
-                                        <span className={`card-poke_stat-number letter-${pokemon?.types[0].type.name}`}>{stat.base_stat}</span>
+                                        <span className='status-text'>
+                                            <p className='card-poke_stat-label'>{stat.stat.name}</p>
+                                        </span>
+                                        <span className='status-bar'>
+                                            <span className='status-bar-percent'>
+                                                <p className='status-text-number'>{stat.base_stat}/150</p>  
+                                                <h4 className={`status-bar2 bg-${pokemon?.types[0].type.name}`} style={{width: `${300*stat.base_stat/150}px`}}></h4>
+                                            </span>
+                                        </span>
                                     </li>
                                 ))
                             }
                         </ul>
                     </section>
                     {/* APARTADO DE MOVIMIENTOS */}
+
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>Movements</h3>
                         <ul className='card-poke_moves-container'>

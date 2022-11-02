@@ -33,7 +33,7 @@ const CardPoke = ({url}) => {
                         ))
                     }
                 </ul>
-                <p className='card-poke_type-label'>Type</p>
+                <p className='card-poke_type-label'></p>
                 <ul className='card-poke_stat-container'>
                     {
                         pokemon?.stats.map(stat =>(
