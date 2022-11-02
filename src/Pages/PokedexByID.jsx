@@ -38,10 +38,10 @@ const PokedeXByID = () => {
                     <header className={`card-poke_headerID bg-${pokemon?.types[0].type.name}`}></header>
                     <section className='card-poke_bodyID'>
                         <h3 className={`card-poke_nameID letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
-                        <ul className='card-poke_types-container'>
+                        <ul className={`card-poke_types-container`}>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className={`card-poke_type`}>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type bg-${pokemon?.types[0].type.name}`}>{type.type.name}</li>
                                 ))
                             }
                         </ul>

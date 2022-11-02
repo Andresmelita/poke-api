@@ -12,7 +12,6 @@
 
 .pokeball-img {
     position: fixed;
-    filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
     aspect-ratio: 1;
     animation-name: girarb;
     animation-duration: 20s;
@@ -75,6 +74,7 @@
     }
 
     .pokeball-img {
+        filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
         top: 4%;
         left: 15%;
         width: 120px;
@@ -107,6 +107,7 @@
     }
 
     .pokeball-img {
+        filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
         top: 4%;
         left: 10%;
         width: 90px;
@@ -127,6 +128,7 @@
     }
 
     .pokeball-img {
+        filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
         top: 4%;
         left: 8%;
         width: 60px;
@@ -149,13 +151,20 @@
 .card-poke_types-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .card-poke_type {
     font-size: 17px;
     text-transform: capitalize;
     position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(58, 58, 58);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .card-poke_type:nth-child(2)::before {
@@ -184,7 +193,7 @@
     justify-content: flex-start;
     gap: 20px 5px;
     justify-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 0 5px 35px;
     margin-left: 10px;
     margin-right: 10px;
@@ -203,7 +212,7 @@
     justify-content: center;
     gap: 20px 5px;
     justify-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 0 5px 35px;
     margin-left: 10px;
     margin-right: 10px;
