@@ -108,7 +108,7 @@
     .pokeball-img {
         top: 4%;
         left: 10%;
-        width: 100px;
+        width: 90px;
         z-index: 2;
     }
 }
@@ -116,7 +116,7 @@
 @media screen and (max-width: 640px) {
     .card-poke_spriteID {
         transform: translate(-50%, -50%);
-        top: 0%;
+        top: 28px;
         left: 50%;
     }
 
@@ -127,7 +127,7 @@
     .pokeball-img {
         top: 4%;
         left: 8%;
-        width: 80px;
+        width: 60px;
         z-index: 2;
     }
 }
