@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Pokemon404 from '../components/pokedexID/Pokemon404'
 import pokedexByID from './styles/pokedexByID.css'
 
@@ -25,6 +25,8 @@ const PokedeXByID = () => {
         return <Pokemon404/>
     }
 
+    const navigate = useNavigate()
+
     const handleClick = () => {
         navigate('/pokedex')
     }
@@ -41,7 +43,7 @@ const PokedeXByID = () => {
                         <ul className={`card-poke_types-container`}>
                             {
                                 pokemon?.types.map(type => (
-                                    <li key={type.slot} className={`card-poke_type bg-${pokemon?.types[0].type.name}`}>{type.type.name}</li>
+                                    <li key={type.slot} className={`card-poke_type bg-${type.type.name}`}>{type.type.name}</li>
                                 ))
                             }
                         </ul>

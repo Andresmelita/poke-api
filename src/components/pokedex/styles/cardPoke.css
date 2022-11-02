@@ -38,17 +38,13 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+    font-size: 14px;
 }
 
 .card-poke_type {
-    font-size: 17px;
+    font-size: 14px;
     text-transform: capitalize;
     position: relative;
-}
-
-.card-poke_type:nth-child(2)::before {
-    content: '/';
-    position: absolute;
 }
 
 .card-poke_type-label {
