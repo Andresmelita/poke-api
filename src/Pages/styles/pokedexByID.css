@@ -59,7 +59,6 @@
 
 .card-poke_spriteID {
     width: 100%;
-    max-width: 350px;
     margin: auto;
     z-index: 1;
     position: absolute;
@@ -69,6 +68,10 @@
 @media screen and (min-width: 960px) {
     .card-poke_spriteID{
         animation: movimiento 5s linear infinite;
+    }
+
+    .card-poke_spriteID {
+        max-width: 350px;
     }
 
     .pokeball-img {
@@ -98,6 +101,10 @@
         left: 50%;
     }
 
+    .card-poke_spriteID {
+        max-width: 300px;
+    }
+
     .pokeball-img {
         top: 4%;
         left: 10%;
@@ -111,6 +118,10 @@
         transform: translate(-50%, -50%);
         top: 0%;
         left: 50%;
+    }
+
+    .card-poke_spriteID {
+        max-width: 250px;
     }
 
     .pokeball-img {
