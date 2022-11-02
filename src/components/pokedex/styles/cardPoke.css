@@ -93,8 +93,22 @@
     text-transform: uppercase;
 }
 
-.cardpoke_stat-number {
-    font-size: 18px;
+@media screen and (min-width: 960px) {
+    .cardpoke_stat-number {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .cardpoke_stat-number {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cardpoke_stat-number {
+        font-size: 14px;
+    }
 }
 
 /* Borders Colors*/
