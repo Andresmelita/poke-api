@@ -6,6 +6,14 @@
     margin: 10px;
     border-width: 10px;
     border-style: solid;
+    transition: linear 1s transform;
+}
+
+.card-poke:hover {
+    transition: linear 400ms transform;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.781);
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .card-poke_header {

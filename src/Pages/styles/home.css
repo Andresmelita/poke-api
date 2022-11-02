@@ -23,18 +23,33 @@
     }
 }
 
+@keyframes escala {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @media screen and (min-width: 960px) {
-    .pokedex_img {
+    .pokedex_image {
+        animation: escala 4s infinite linear;
     }
 }
 
 @media (min-width: 641px) and (max-width: 959px) {
-    .pokedex_img {
+    .pokedex_image {
+        animation: movimiento 3s linear infinite;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .pokedex_img {
+    .pokedex_image {
+        animation: movimiento 3s linear infinite;
     }
 }
 
@@ -50,7 +65,6 @@
     margin-bottom: 10px;
     max-width: 500px;
     z-index: 1;
-    animation: movimiento 2.5s linear infinite;
 }
 
 .pokedex_subtitle {

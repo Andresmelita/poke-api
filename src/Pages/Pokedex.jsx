@@ -8,6 +8,7 @@ import SelectByType from '../components/pokedex/SelectByType'
 import Header from '../components/shared/Header'
 import Footer from '../components/shared/Footer'
 import pokedex from './styles/pokedex.css'
+import { useNavigate } from 'react-router-dom'
 
 const Pokedex = () => {
     
@@ -41,11 +42,17 @@ const Pokedex = () => {
     const initialPoke = (page - 1)*pokePerPage
     const finalPoke = page * pokePerPage
 
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate(`/`)
+    }
+
     return (
         <div>
             <Header/>
             <header>
-                <img className='pokedex-logo' alt='' src='./images/home/pokedex.png'/>
+                <img className='pokedex-logo' alt='' src='./images/home/pokedex.png' onClick={handleClick}/>
                 <p className='pokedex-welcome'>Welcome <span><b>{userName}</b></span>, here you can find your favorite pokemon!</p>
             </header>
             <aside className='pokedex-aside'>
