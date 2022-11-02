@@ -230,6 +230,8 @@
 .card-poke_stat {
     display: flex;
     gap: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .status-text {

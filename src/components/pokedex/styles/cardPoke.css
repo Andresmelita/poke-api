@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.card-poke {
+.cardpoke {
     width:100%;
     max-width: 385px;
     border-radius: 10px;
@@ -12,20 +12,20 @@
     transition: linear 1s transform;
 }
 
-.card-poke:hover {
+.cardpoke:hover {
     transition: linear 400ms transform;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.781);
     transform: scale(1.01);
     cursor: pointer;
 }
 
-.card-poke_header {
+.cardpoke_header {
     height: 200px;
     position: relative;
     margin-bottom: 65px;
 }
 
-.card-poke_sprite {
+.cardpoke_sprite {
     width: 60%;
     position: absolute;
     top: 40px;
@@ -34,35 +34,45 @@
     filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
 }
 
-.card-poke_body {
+.cardpoke_body {
     margin-bottom: 30px;
 }
 
-.card-poke_name {
+.cardpoke_name {
     text-transform: capitalize;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-.card-poke_types-container {
+.cardpoke_types-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
-.card-poke_type {
+.cardpoke_type {
+    font-size: 17px;
     text-transform: capitalize;
     position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(58, 58, 58);
+    font-size: 18px;
+    font-weight: 500;
+    height: 40px;
 }
 
-.card-poke_type-label {
+.cardpoke_type-label {
     text-align: center;
     color: #999;
     padding-bottom: 30px;
 }
 
-.card-poke_stat-container {
+.cardpoke_stat-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 5px;
@@ -70,19 +80,20 @@
     padding: 0 5px 35px;
 }
 
-.card-poke_stat {
+.cardpoke_stat {
     display: flex;
     gap: 5px;
     flex-direction: column;
     align-items: center;
 }
 
-.card-poke_stat-label {
+.cardpoke_stat-label {
     color: #999;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
-.card-poke_stat-number {
+.cardpoke_stat-number {
     font-size: 18px;
 }
 
