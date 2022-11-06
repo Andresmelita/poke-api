@@ -10,6 +10,7 @@
     height: 100%;
     width: 200px;
     margin: 100px;
+    animation: ejeX 3s linear infinite;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.699));
 }
 
@@ -34,4 +35,16 @@
     color: var(--color-red);
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+@keyframes ejeX {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

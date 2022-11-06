@@ -10,7 +10,7 @@ const Pokemon404 = () => {
         <div>
             <Header/>
             <div className='view'>
-                <h1>Pokemon not Found !</h1>
+                <h1>Pokemon not Found</h1>
                 <img className='notFound' src='./images/notFound.png' alt=''/>
                 <Link to='/pokedex'>
                     <button className='return'>Return to Pokedex</button>
