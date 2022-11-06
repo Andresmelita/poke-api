@@ -3,14 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
     text-align: center;
 }
 
 .notFound {
     height: 100%;
     width: 200px;
-    margin: 100px;
     animation: ejeX 3s linear infinite;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.699));
 }
@@ -47,5 +45,32 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .view {
+        margin: 100px;
+    }
+    .notFound {
+        margin: 100px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 959px) {
+    .view {
+        margin: 80px;
+    }
+    .notFound {
+        margin: 80px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .view {
+        margin: 50px;
+    }
+    .notFound {
+        margin: 50px;
     }
 }
