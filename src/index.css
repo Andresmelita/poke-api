@@ -56,3 +56,20 @@ input {
 button {
     border: none;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 12px;
+}    
+
+html::-webkit-scrollbar-thumb{
+    background-color:rgb(194, 28, 28);
+    border-radius: 1px;
+}    
+
+html::-webkit-scrollbar-track{
+    background-color:#00141d;
+}    
