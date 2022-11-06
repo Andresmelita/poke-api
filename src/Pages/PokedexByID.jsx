@@ -9,7 +9,6 @@ const PokedeXByID = () => {
     const{id} = useParams()
 
     const [pokemon, setPokemon] = useState()
-    const [hasError, setHasError] = useState(false)
 
     useEffect(() => {
         const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
@@ -17,13 +16,9 @@ const PokedeXByID = () => {
             .then(res => setPokemon(res.data))
             .catch(err => {
                 console.log(err)
-                setHasError(true)
+                navigate('/error')
             })
     }, [])
-
-    if (hasError) {
-        return <Pokemon404/>
-    }
 
     const navigate = useNavigate()
 

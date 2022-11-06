@@ -41,6 +41,7 @@ const Pokedex = () => {
     const [pokePerPage, setPokePerPage] = useState(8)
     const initialPoke = (page - 1)*pokePerPage
     const finalPoke = page * pokePerPage
+    
 
     const navigate = useNavigate()
 
