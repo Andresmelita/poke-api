@@ -1,0 +1,116 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+}
+
+.item{ 
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    animation: loading 2s infinite;
+    overflow: hidden;
+    
+}
+
+.ball{
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    z-index: 100;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;  
+    position: absolute;
+}
+
+.half-ball{
+    margin: auto;
+    border: 8px solid #000000; 
+    left: 0;
+    right: 0;
+    top:100px;
+    bottom:0;
+    z-index: 100;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 100px 100px;
+    width: 200px;
+    height: 100px;
+}
+
+.half-sup{
+    margin: auto;
+    border: 8px solid #000000; 
+    left: 0;
+    right: 0;
+    top:0;
+    transform: rotate(180deg);
+    bottom:100px;
+    z-index: 100;
+    position: absolute;
+    background-color: rgb(218, 23, 23);
+    border-radius: 0 0 100px 100px;
+    width: 200px;
+    height: 100px;
+}
+
+.horizon{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;    
+    margin-top: auto;
+    border-radius: 0px;
+    width: 194px;
+    height: 28px;
+    background-color: #000000;
+    z-index: 100;
+}
+
+.big-button{
+    z-index: 500;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    border-radius: 50%;
+    border: 8px solid #000000;
+    position: absolute;
+    height: 64px;
+    width: 64px; 
+    background-color: white;
+}
+
+.small-button{
+    z-index: 500;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    border-radius: 50%;
+    border: 5px solid #000000;
+    position: absolute;
+    height: 38px;
+    width: 38px; 
+    background-color: white;
+}
+
+@keyframes loading {
+    0% { transform: translate(0, 0) rotate(0); }
+    25% { transform: translate(-8px, 0) rotate(-18deg); }
+    33% { transform: translate(8px, 0) rotate(18deg); }
+    50% { transform: translate(-8px, 0) rotate(-12deg); }
+    60% { transform: translate(8px, 0) rotate(18deg); }
+    100% { transform: translate(0, 0) rotate(0); }
+}
