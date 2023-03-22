@@ -3,13 +3,15 @@ import './loading.scss'
 
 const Loading = () => {
     return (
-        <div class="item">
-            <div class="ball"></div>
-            <div class="half-sup"></div>
-            <div class="half-ball"></div>
-            <div class="big-button"></div>
-            <div class="small-button"></div>
-            <div class="horizon"></div>
+        <div className='poke-loading'>
+            <div className="item">
+                <div className="ball"></div>
+                <div className="half-sup"></div>
+                <div className="half-ball"></div>
+                <div className="big-button"></div>
+                <div className="small-button"></div>
+                <div className="horizon"></div>
+            </div>
         </div>
     )
 }

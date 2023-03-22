@@ -1,23 +1,26 @@
-body{
+.poke-loading{
     background-color: #ffffff;
-    margin: 0;
     overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .item{ 
-    position: absolute;
     margin: auto;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
     left: 0;
     right: 0;
     top:0;
     bottom:0;
     animation: loading 2s infinite;
-    overflow: hidden;
-    
+    position: absolute;
 }
 
 .ball{
     border-radius: 50%;
+    position: absolute;
     width: 210px;
     height: 210px;
     z-index: 100;
@@ -27,19 +30,21 @@ body{
     right: 0;
     top:0;
     bottom:0;  
-    position: absolute;
+
 }
 
 .half-ball{
     margin: auto;
+    position: absolute;
     border: 8px solid #000000; 
     left: 0;
     right: 0;
     top:100px;
     bottom:0;
     z-index: 100;
-    position: absolute;
+
     background-color: rgb(255, 255, 255);
+    position: absolute;
     border-radius: 0 0 100px 100px;
     width: 200px;
     height: 100px;
@@ -52,9 +57,10 @@ body{
     right: 0;
     top:0;
     transform: rotate(180deg);
+    position: absolute;
     bottom:100px;
     z-index: 100;
-    position: absolute;
+
     background-color: rgb(218, 23, 23);
     border-radius: 0 0 100px 100px;
     width: 200px;
