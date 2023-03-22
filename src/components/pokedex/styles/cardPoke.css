@@ -7,6 +7,7 @@
     overflow: hidden;
     margin: 10px;
     border-width: 10px;
+    height: 530px;
     border-style: solid;
     font-family: 'Inter', sans-serif;
     transition: linear 1s transform;
@@ -14,28 +15,36 @@
 
 .cardpoke:hover {
     transition: linear 400ms transform;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.781);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.01);
     cursor: pointer;
 }
 
 .cardpoke_header {
-    height: 200px;
-    position: relative;
+    height: 350px;
+    position:relative;
     margin-bottom: 65px;
+    z-index: 0;
 }
 
 .cardpoke_sprite {
     width: 60%;
     position: absolute;
-    top: 40px;
+    top: -130px;
+    z-index: 20;
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
 }
 
 .cardpoke_body {
-    margin-bottom: 30px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 0px;
+    border-radius: 190px 190px 0px 0px;
+    margin-top: -250px;
+    padding-top: 100px;
+    height: 100%;
 }
 
 .cardpoke_name {
@@ -207,7 +216,7 @@
     background: linear-gradient(178.92deg, #003f5c 0.92%, #25495a 47.96%, #5c6c74 99.08%);
 }
 .bg-fire {
-    background: linear-gradient(178.92deg, #ff9563 0.92%, #ffa149 47.96%, #ffe449 99.08%);
+    background: linear-gradient(178.92deg, #fff 0.92%, #fff 47.96%, #fff 99.08%);
 }
 .bg-water {
     background: linear-gradient(178.92deg, #1bb7ff 0.92%, #3ad1ff 47.96%, #adf5ff 99.08%);

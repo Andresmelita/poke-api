@@ -22,9 +22,10 @@ const CardPoke = ({url}) => {
     return (
         <article className={`cardpoke border-${pokemon?.types[0].type.name}`} onClick={handleClick}>
             <header className={`cardpoke_header bg-${pokemon?.types[0].type.name}`}>
-                <img className='cardpoke_sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
+                
             </header>
             <section className='cardpoke_body'>
+                <img className='cardpoke_sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt=''/>
                 <h3 className={`cardpoke_name letter-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
                 <ul className='cardpoke_types-container'>
                     {
