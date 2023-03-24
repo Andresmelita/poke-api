@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './styles/inputs.css'
+import './styles/inputs.scss'
 
 const InputSearch = () => {
 

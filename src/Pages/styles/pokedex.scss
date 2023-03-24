@@ -1,10 +1,49 @@
+.page-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #fff;
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header-page {
+    display: flex;
+    width:100%;
+    min-width: 400px;
+    text-align: center;
+    justify-content: center;
+}
+
+.pokedex-welcome {
+    margin:auto;
+    margin-top: 40px;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.pokedex-aside {
+    display: flex;
+    width: 100%;
+}
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: max-content;
+    align-content: center;
+    margin: 0;
+}
+
 .card-container {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    width: 94vw;
-    margin: auto;
 }
 
 .pokedex-logo {
@@ -25,28 +64,19 @@
     cursor: pointer;
 }
 
-.pokedex-welcome {
-    margin:auto;
-    margin-top: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 15px;
-}
 
-.pokedex-aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-    position: relative;
-}
 
 @media screen and (min-width: 960px) {
     .pokedex-aside {
+        display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         flex-wrap: nowrap;
         position: relative;
+        gap: 10px;
+    }
+    .space-pagination {
+        margin-left: 90px;
     }
 }
 

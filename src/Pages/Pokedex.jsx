@@ -7,7 +7,7 @@ import Pagination from '../components/pokedex/Pagination'
 import SelectByType from '../components/pokedex/SelectByType'
 import Header from '../components/shared/Header'
 import Footer from '../components/shared/Footer'
-import pokedex from './styles/pokedex.css'
+import pokedex from './styles/pokedex.scss'
 import { useNavigate } from 'react-router-dom'
 
 const Pokedex = () => {
@@ -38,7 +38,7 @@ const Pokedex = () => {
     //Lógica de paginación
 
     const [page, setPage] = useState(1)
-    const [pokePerPage, setPokePerPage] = useState(8)
+    const [pokePerPage, setPokePerPage] = useState(12)
     const initialPoke = (page - 1)*pokePerPage
     const finalPoke = page * pokePerPage
     
@@ -52,37 +52,45 @@ const Pokedex = () => {
     return (
         <div>
             <Header/>
-            <header>
-                <img className='pokedex-logo' alt='' src='./images/home/pokedex.png' onClick={handleClick}/>
-                <p className='pokedex-welcome'>Welcome <span><b>{userName}</b></span>, here you can find your favorite pokemon!</p>
-            </header>
-            <aside className='pokedex-aside'>
-                <InputSearch/>
-                <Pagination
-                    page={page}
-                    pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
-                    setPage={setPage}
-                />
-                <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
-            </aside>
-            <main>
-                <div className='card-container'>
-                    {
-                        pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
-                            <CardPoke
-                                key={pokemon.url}
-                                url={pokemon.url}
-                            />
-                        ))
-                    }
+            <div className='page-container'>
+                <div className='header-page'>
+                    <img className='pokedex-logo' alt='' src='./images/home/pokedex.png' onClick={handleClick}/>
+                    <p className='pokedex-welcome'>Welcome <span><b>{userName}</b></span>, here you can find your favorite pokemon!</p>
                 </div>
-            </main>
-            <div className='paginationTwo'>
-                <Pagination
-                    page={page}
-                    pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
-                    setPage={setPage}
-                />
+                <div className='pokedex-aside'>
+                    <div className='space space-type'>
+                        <SelectByType setTypeSelected={setTypeSelected} setPage={setPage} />
+                    </div>
+                    <div className='space space-pagination'>
+                    <Pagination
+                        page={page}
+                        pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+                        setPage={setPage}
+                    />
+                    </div>
+                    <div className='space space-search'>
+                        <InputSearch className='input-search'/>
+                    </div>
+                </div>
+                <main>
+                    <div className='card-container'>
+                        {
+                            pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
+                                <CardPoke
+                                    key={pokemon.url}
+                                    url={pokemon.url}
+                                />
+                            ))
+                        }
+                    </div>
+                </main>
+                <div className='paginationTwo'>
+                    <Pagination
+                        page={page}
+                        pagesLength={pokemons && Math.ceil(pokemons.length / pokePerPage)}
+                        setPage={setPage}
+                    />
+                </div>
             </div>
             <Footer/>
         </div>

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import './styles/inputs.css'
+import './styles/inputs.scss'
 
 const SelectByType = ({setTypeSelected, setPage}) => {
 

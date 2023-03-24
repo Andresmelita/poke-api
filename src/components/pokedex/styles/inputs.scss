@@ -2,23 +2,25 @@
     display: flex;
     align-items: center;
     border: solid rgb(196, 1, 1);
-    position: relative;
     height: 34px;
     cursor: auto;
+    background-color:rgb(45, 83, 71);
     border-radius: 5px;
 }
 
 .search-input {
     height: 28px;
+    width: 160px;
 }
 
 .selectType {
     background-color: var(--color-red);
-    position: relative;
     border: solid rgb(196, 1, 1);
-    width: 160px;
     height: 28px;
     color: aliceblue;
+    align-items: start;
+    display: flex;
+    width: 140px;
     cursor: pointer;
 }
 
@@ -33,14 +35,12 @@
 
 @media screen and (min-width: 960px) {
     .selectType {
-        margin-right: 110px;
-        margin-left: 100px;
         font-size: 16px;
         border-radius: 4px;
     }
     .search {
         font-size: 18px;
-        margin-left: 110px;
+        margin-left: 0px;
     }
     .search-input {
         font-size: 16px;

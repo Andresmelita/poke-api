@@ -2,7 +2,8 @@
 
 .cardpoke {
     width:100%;
-    max-width: 385px;
+    min-width: 330px;
+    max-width: 340px;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
@@ -30,7 +31,7 @@
 .cardpoke_sprite {
     width: 60%;
     position: absolute;
-    top: -130px;
+    top: -110px;
     z-index: 20;
     left: 50%;
     transform: translateX(-50%);
@@ -54,25 +55,31 @@
     font-weight: 500;
 }
 
+.cardpoke_type_box {
+    background-color: #00c4aa;
+    box-shadow: 2px 2px 4px rgb(58, 58, 58, 0.7);
+    width: max-content;
+    height: max-content;
+}
+
 .cardpoke_types-container {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    margin-top: 15px;
+    gap: 10px;
 }
 
 .cardpoke_type {
-    font-size: 17px;
+    display: flex;
     text-transform: capitalize;
+    align-items: center;
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 8px;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgb(58, 58, 58);
     font-size: 18px;
     font-weight: 500;
-    height: 40px;
+    height: 30px;
 }
 
 .cardpoke_type-label {
@@ -97,8 +104,8 @@
 }
 
 .cardpoke_stat-label {
-    color: #999;
-    font-size: 12px;
+    color: #888;
+    width: max-content;
     text-transform: uppercase;
 }
 
@@ -189,58 +196,58 @@
 /* Background Colora */
 
 .bg-normal {
-    background: linear-gradient(178.92deg, #5a5a5a 0.92%, #a1a1a1 47.96%, #edecff 99.08%);
+    background: linear-gradient(178.92deg, #5a5a5a 5%, #a1a1a1 30%, #edecff 60%);
 }
 .bg-fighting {
-    background: linear-gradient(178.92deg, #7e0e0e 0.92%, #cc2e2e 47.96%, #ffa1a1 99.08%);
+    background: linear-gradient(178.92deg, #7e0e0e 5%, #cc2e2e 30%, #ffa1a1 60%);
 }
 .bg-flying {
-    background: linear-gradient(178.92deg, #47c5aa 0.92%, #76cece 47.96%, #a4f7c0 99.08%);
+    background: linear-gradient(178.92deg, #47c5aa 5%, #76cece 30%, #a4f7c0 60%);
 }
 .bg-poison {
-    background: linear-gradient(178.92deg, #7e26b1 0.92%, #b41ce2 47.96%, #f0beff 99.08%);
+    background: linear-gradient(178.92deg, #7e26b1 5%, #b41ce2 30%, #f0beff 60%);
 }
 .bg-ground {
-    background: linear-gradient(178.92deg, #a8713d 0.92%, #dfb260 47.96%, #fff6a6 99.08%);
+    background: linear-gradient(178.92deg, #a8713d 5%, #dfb260 30%, #fff6a6 60%);
 }
 .bg-rock {
-    background: linear-gradient(178.92deg, #491b00 0.92%, #724b18 47.96%, #d19862 99.08%);
+    background: linear-gradient(178.92deg, #491b00 5%, #724b18 30%, #d19862 60%);
 }
 .bg-bug {
-    background: linear-gradient(178.92deg, #99bb01 0.92%, #c1ce50 47.96%, #f6ffc5 99.08%);
+    background: linear-gradient(178.92deg, #99bb01 5%, #c1ce50 30%, #f6ffc5 60%);
 }
 .bg-ghost {
-    background: linear-gradient(178.92deg, #3a007c 0.92%, #661eb8 47.96%, #b65cd1 99.08%);
+    background: linear-gradient(178.92deg, #3a007c 5%, #661eb8 30%, #b65cd1 60%);
 }
 .bg-steel {
-    background: linear-gradient(178.92deg, #003f5c 0.92%, #25495a 47.96%, #5c6c74 99.08%);
+    background: linear-gradient(178.92deg, #003f5c 5%, #25495a 30%, #5c6c74 60%);
 }
 .bg-fire {
-    background: linear-gradient(178.92deg, #fff 0.92%, #fff 47.96%, #fff 99.08%);
+    background: linear-gradient(178.92deg, #ff9563 5%, #ffa149 30%, #ffe449 60%);
 }
 .bg-water {
-    background: linear-gradient(178.92deg, #1bb7ff 0.92%, #3ad1ff 47.96%, #adf5ff 99.08%);
+    background: linear-gradient(178.92deg, #1bb7ff 5%, #3ad1ff 30%, #adf5ff 60%);
 }
 .bg-grass {
-    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    background: linear-gradient(178.92deg, #7EC6C5 5%, #ABDAC6 30%, #CAE099 60%);
 }
 .bg-electric {
-    background: linear-gradient(178.92deg, #ffc420 0.92%, #ffec46 47.96%, #faffb1 99.08%);
+    background: linear-gradient(178.92deg, #ffc420 5%, #ffec46 30%, #faffb1 60%);
 }
 .bg-psychic {
-    background: linear-gradient(178.92deg, #b91f52 0.92%, #bd3965 47.96%, #ff81bc 99.08%);
+    background: linear-gradient(178.92deg, #b91f52 5%, #bd3965 30%, #ff81bc 60%);
 }
 .bg-ice {
-    background: linear-gradient(178.92deg, #16d8d8 0.92%, #8eebeb 47.96%, #d3ffd1 99.08%);
+    background: linear-gradient(178.92deg, #16d8d8 5%, #8eebeb 30%, #d3ffd1 60%);
 }
 .bg-dragon {
-    background: linear-gradient(178.92deg, #061452 0.92%, #243894 47.96%, #4385c4 99.08%);
+    background: linear-gradient(178.92deg, #061452 5%, #243894 30%, #4385c4 60%);
 }
 .bg-dark {
-    background: linear-gradient(178.92deg, #292929 0.92%, #575757 47.96%, #8491ad 99.08%);
+    background: linear-gradient(178.92deg, #292929 5%, #575757 30%, #8491ad 60%);
 }
 .bg-fairy {
-    background: linear-gradient(178.92deg, #ff9afa 0.92%, #ffc1f5 47.96%, #edcdfc 99.08%);
+    background: linear-gradient(178.92deg, #ff9afa 5%, #ffc1f5 30%, #edcdfc 60%);
 }
 
 /* Letter Color */
