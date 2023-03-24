@@ -11,7 +11,7 @@ const Home = () => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 3200)
+        }, 3600)
     },[])
 
     useEffect(()=>{
@@ -25,16 +25,15 @@ const Home = () => {
 
     return (
         <div>
-            {loading ? <Loading/> : 
-                <div className='pokedex' style={backGroundObject}>
-                    <img className='pokedex_image' src='./images/home/pokedex.png' alt=''/>
-                    <header className='pokedex_header'>
-                        <h2 className='pokedex_subtitle'>Hi Trainer!</h2>
-                        <p className='pokedex_text'>Give me your name to see the pokedex</p>
-                    </header>
-                    <FormHome/>
-                </div>
-            }
+            {loading && <Loading/>}
+            <div className='pokedex' style={backGroundObject}>
+                <img className='pokedex_image' src='./images/home/pokedex.png' alt=''/>
+                <header className='pokedex_header'>
+                    <h2 className='pokedex_subtitle'>Hi Trainer!</h2>
+                    <p className='pokedex_text'>Give me your name to see the pokedex</p>
+                </header>
+                <FormHome/>
+            </div>
         </div>
 
     )
