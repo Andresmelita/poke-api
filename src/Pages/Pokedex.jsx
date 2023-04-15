@@ -9,6 +9,7 @@ import Header from '../components/shared/Header'
 import Footer from '../components/shared/Footer'
 import pokedex from './styles/pokedex.scss'
 import { useNavigate } from 'react-router-dom'
+import back from '../../public/images/back.jpg'
 
 const Pokedex = () => {
     
@@ -52,6 +53,7 @@ const Pokedex = () => {
     return (
         <div>
             <Header/>
+            <img className='backImage' src={back}></img>
             <div className='page-container'>
                 <div className='header-page'>
                     <img className='pokedex-logo' alt='' src='./images/home/pokedex.png' onClick={handleClick}/>

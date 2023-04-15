@@ -15,6 +15,12 @@
     text-align: center;
     justify-content: center;
 }
+.backImage {
+    background: cover;
+    position: fixed;
+    z-index: 0;
+    opacity: 0.17;
+}
 
 .pokedex-welcome {
     margin:auto;
